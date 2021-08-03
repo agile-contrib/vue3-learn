@@ -1,0 +1,33 @@
+{
+  "name": "vue3-learn",
+  "version": "0.1.0",
+  "description": "vue3学习代码笔记",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agile-contrib/vue3-learn.git"
+  },
+  "dependencies": {
+    "@hai2007/style": "^0.3.0",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0"
+  },
+  "author": "你好2007",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agile-contrib/vue3-learn/issues"
+  },
+  "homepage": "https://github.com/agile-contrib/vue3-learn#readme",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
