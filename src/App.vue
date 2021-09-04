@@ -26,7 +26,8 @@
 // import Index from "./pages/setup-props.vue"; // 传递数据给组件[1]
 // import Index from "./pages/setup-context.vue"; // [2] + [3]
 
-import Index from "./pages/computed.vue"; // 计算属性
+// import Index from "./pages/computed.vue"; // 计算属性
+import Index from "./pages/watch.vue"; // 监听器
 
 export default {
   components: {
