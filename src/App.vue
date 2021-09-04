@@ -1,16 +1,16 @@
 <template>
-  <!-- <Index /> -->
+  <Index />
 
   <!-- [1] -->
   <!-- <Index key1="value1" /> -->
 
   <!-- [2] -->
-  <Index key1="value1" key2="value2" @myclick="doit">
+  <!-- <Index key1="value1" key2="value2" @myclick="doit">
     <span>这是一个span</span>
     <template v-slot:myname>
       <span>这是一个有名字的插槽</span>
     </template>
-  </Index>
+  </Index> -->
 </template>
 
 <script>
@@ -24,7 +24,9 @@
 
 // setup的两个形参
 // import Index from "./pages/setup-props.vue"; // 传递数据给组件[1]
-import Index from "./pages/setup-context.vue"; // [2] + [3]
+// import Index from "./pages/setup-context.vue"; // [2] + [3]
+
+import Index from "./pages/computed.vue"; // 计算属性
 
 export default {
   components: {
@@ -33,9 +35,9 @@ export default {
   setup() {
     return {
       // [3]
-      doit(param1) {
-        console.log(param1);
-      },
+      // doit(param1) {
+      //   console.log(param1);
+      // },
     };
   },
 };
