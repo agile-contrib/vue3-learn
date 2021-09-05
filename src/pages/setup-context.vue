@@ -1,5 +1,4 @@
 <template>
-  <h2>context</h2>
   <button @click="doEmit()">点击我</button>
 </template>
 <script>

@@ -1,5 +1,4 @@
 <template>
-  <h2>props</h2>
 </template>
 <script>
 export default {

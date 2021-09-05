@@ -1,5 +1,4 @@
 <template>
-  <h2>监听器</h2>
   {{ count }}
   <button @click="count++">新增+1</button>
 </template>

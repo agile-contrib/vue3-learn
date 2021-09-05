@@ -27,7 +27,10 @@
 // import Index from "./pages/setup-context.vue"; // [2] + [3]
 
 // import Index from "./pages/computed.vue"; // 计算属性
-import Index from "./pages/watch.vue"; // 监听器
+// import Index from "./pages/watch.vue"; // 监听器
+// import Index from "./pages/watchEffect.vue";
+// import Index from "./pages/hooks.vue";
+import Index from "./pages/toRef.vue";
 
 export default {
   components: {

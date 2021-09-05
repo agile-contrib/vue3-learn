@@ -1,5 +1,4 @@
 <template>
-  <h2>计算属性</h2>
   <div>
     key1:{{ infoObj.key1 }}
     <input type="text" v-model="infoObj.key1" />
