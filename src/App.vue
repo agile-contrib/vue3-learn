@@ -1,50 +1,25 @@
 <template>
-  <Index />
-
-  <!-- [1] -->
-  <!-- <Index key1="value1" /> -->
-
-  <!-- [2] -->
-  <!-- <Index key1="value1" key2="value2" @myclick="doit">
-    <span>这是一个span</span>
-    <template v-slot:myname>
-      <span>这是一个有名字的插槽</span>
-    </template>
-  </Index> -->
+  <ul>
+    <li>
+      <router-link to="/a"> Go to pageA </router-link>
+    </li>
+    <li>
+      <router-link to="/b"> Go to pageB </router-link>
+    </li>
+  </ul>
+  <div>
+    <router-view />
+  </div>
 </template>
-
-<script>
-/**
- * 查看的时候，放开需要的部分就可以了
- */
-
-// import Index from "./pages/setup.vue"; // setup
-// import Index from "./pages/ref.vue"; // ref定义响应式数据
-// import Index from "./pages/reactive.vue"; // reactive定义对象类型数据响应
-
-// setup的两个形参
-// import Index from "./pages/setup-props.vue"; // 传递数据给组件[1]
-// import Index from "./pages/setup-context.vue"; // [2] + [3]
-
-// import Index from "./pages/computed.vue"; // 计算属性
-// import Index from "./pages/watch.vue"; // 监听器
-// import Index from "./pages/watchEffect.vue";
-// import Index from "./pages/hooks.vue";
-// import Index from "./pages/toRef.vue";
-// import Index from "./pages/toRaw.vue";
-import Index from "./pages/customRef.vue"; // 自定义ref
-
-export default {
-  components: {
-    Index,
-  },
-  setup() {
-    return {
-      // [3]
-      // doit(param1) {
-      //   console.log(param1);
-      // },
-    };
-  },
-};
-</script>
+<style scoped>
+ul > li {
+  display: inline-block;
+  margin: 20px;
+  cursor: pointer;
+  background-color: rgb(53, 149, 233);
+  padding: 10px;
+}
+div {
+  outline: 1px solid red;
+}
+</style>
